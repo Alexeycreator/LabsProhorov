@@ -76,5 +76,13 @@
     <ItemGroup>
         <None Include="App.config"/>
     </ItemGroup>
+	<ItemGroup>
+      <Compile Include="Shared\**\*.cs" />
+        <EmbeddedResource Include="Shared\**\*.resx" />
+	    <None Include="Shared\**\*.settings" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Files\" />
+	</ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
 </Project>
