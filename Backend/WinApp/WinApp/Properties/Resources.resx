@@ -121,10 +121,19 @@
   <data name="Formula_V" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Formula_V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Formula_k0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Formula_k0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Formula_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formula_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Formula_pt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formula_pt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lambda" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Lambda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Formula_k0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formula_k0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Constatna_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Constatna_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

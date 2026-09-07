@@ -63,9 +63,39 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Constatna_C {
+            get {
+                object obj = ResourceManager.GetObject("Constatna_C", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Formula_a {
+            get {
+                object obj = ResourceManager.GetObject("Formula_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Formula_k0 {
             get {
                 object obj = ResourceManager.GetObject("Formula_k0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Formula_pt {
+            get {
+                object obj = ResourceManager.GetObject("Formula_pt", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
