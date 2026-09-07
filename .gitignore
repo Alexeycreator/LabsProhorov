@@ -20,3 +20,5 @@ obj/
 .idea/shelf/
 .idea/dictionaries/
 .idea/httpRequests/
+
+.vs/
