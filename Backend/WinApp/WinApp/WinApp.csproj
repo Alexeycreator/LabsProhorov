@@ -33,11 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Drawing.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v26.1.Core, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v26.1, Version=26.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -90,22 +88,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Formula_V.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Formula_k0.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Lambda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Formula_pt.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Formula_a.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Constatna_C.png" />
+    <EmbeddedResource Include="Resources\Formula_V.png" />
+    <EmbeddedResource Include="Resources\Formula_k0.png" />
+    <EmbeddedResource Include="Resources\Lambda.png" />
+    <EmbeddedResource Include="Resources\Formula_pt.png" />
+    <EmbeddedResource Include="Resources\Formula_a.png" />
+    <EmbeddedResource Include="Resources\Constatna_C.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,8 +1,9 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp", "WinFormsApp\WinFormsApp.csproj", "{0FE25EBA-A1EE-4DCB-A01D-0F92E661C5CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{CCD48020-4319-4252-81B2-E1AD65C1AEF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinApp", "WinApp\WinApp.csproj", "{43B4B1BF-1F9E-4527-99BC-83805290614D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +19,9 @@ Global
 		{CCD48020-4319-4252-81B2-E1AD65C1AEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD48020-4319-4252-81B2-E1AD65C1AEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD48020-4319-4252-81B2-E1AD65C1AEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B4B1BF-1F9E-4527-99BC-83805290614D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B4B1BF-1F9E-4527-99BC-83805290614D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B4B1BF-1F9E-4527-99BC-83805290614D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B4B1BF-1F9E-4527-99BC-83805290614D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
