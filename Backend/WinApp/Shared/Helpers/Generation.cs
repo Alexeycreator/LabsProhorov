@@ -1,11 +1,13 @@
-﻿using Shared.Calculate;
+﻿using System;
+using System.IO;
+using Shared.Calculate;
 using Shared.Models;
 
 namespace Shared.Helpers
 {
     public sealed class Generation
     {
-        private readonly string filePath = $"WinFormsApp/Files/Labs.json";
+        private readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files", "Labs.json");
         private readonly JsonWriter jsonWriter = new JsonWriter();
         private readonly Calculation calculation = new Calculation();
 
