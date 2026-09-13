@@ -95,5 +95,16 @@
     <EmbeddedResource Include="Resources\Formula_a.png" />
     <EmbeddedResource Include="Resources\Constatna_C.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{ccd48020-4319-4252-81b2-e1ad65c1aef0}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Files\Labs.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
