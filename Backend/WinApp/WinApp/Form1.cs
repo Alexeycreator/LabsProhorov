@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Globalization;
 using System.Windows.Forms;
+using Shared.Calculate;
+using Shared.Helpers;
 
 namespace WinApp
 {
     public partial class Form1 : Form
     {
+        private readonly Calculation calculation = new Calculation();
+        private readonly Generation generation = new Generation();
+
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +36,8 @@ namespace WinApp
                 if (n1 < n2)
                     throw new Exception("Параметр n1 должен быть больше n2");
 
+                calculation.GetValueV(a, lambda, n1, n2);
+                label_answer.Text = calculation.GetValueV(a, lambda, n1, n2).ToString(CultureInfo.CurrentCulture);
             }
             catch (Exception ex)
             {
@@ -63,6 +64,10 @@ namespace WinApp
                 if (L2_lambda < 1 || L2_lambda > 2)
                     throw new Exception("Введите значение длины волны в диапазоне от 1 мкм до 2 мкм");
 
+                calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C);
+                generation.GenerateData(L2_lambda, L2_P0, L2_L, C, L2_L);
+                label_answer.Text = calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C)
+                    .ToString(CultureInfo.CurrentCulture);
             }
             catch (Exception ex)
             {
