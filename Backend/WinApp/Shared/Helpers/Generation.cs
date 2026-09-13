@@ -7,12 +7,13 @@ namespace Shared.Helpers
 {
     public sealed class Generation
     {
-        private readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files", "Labs.json");
+        private readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Files", "Labs.json");
         private readonly JsonWriter jsonWriter = new JsonWriter();
         private readonly Calculation calculation = new Calculation();
 
         public void GenerateData(double lambda, double p0, double l, double c, double waveguideLength)
         {
+            EnsureFileExists();
             var root = new Root
             {
                 Labs_1 = new LabData
@@ -39,6 +40,17 @@ namespace Shared.Helpers
             };
 
             jsonWriter.Write(filePath, root);
+        }
+
+        private void EnsureFileExists()
+        {
+            var dir = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+
+            if (!File.Exists(filePath))
+                using (File.Create(filePath))
+                    ;
         }
     }
 }
