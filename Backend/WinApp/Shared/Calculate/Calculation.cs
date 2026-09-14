@@ -5,6 +5,7 @@ namespace Shared.Calculate
     public sealed class Calculation
     {
         private const long Denominator = 1000000;
+        private const double B0 = 0.1162414;
         private const double B1 = 0.696163;
         private const double B2 = 0.8974794;
         private const double B3 = 0.4079426;
@@ -57,7 +58,7 @@ namespace Shared.Calculate
         #region CalculateLab3
 
         /// <summary>
-        /// Возвращает показатель преломления
+        /// Расчет показателя преломления
         /// </summary>
         /// <param name="lambda">лямбда, вводимая пользователем</param>
         /// <returns>показатель преломления</returns>
@@ -66,27 +67,56 @@ namespace Shared.Calculate
             return CalculateRefractiveIndex(lambda);
         }
 
+        /// <summary>
+        /// Расчет групповой скорости
+        /// </summary>
+        /// <param name="n">вводит пользователь</param>
+        /// <param name="lambda">вводит пользователь</param>
+        /// <param name="nu">вводит пользователь</param>
+        /// <param name="d">вводит пользователь</param>
+        /// <returns>Возвращает групповую скорость</returns>
         public double GetGroupSpeed(double n, double lambda, double nu, double d)
         {
             return CalculateGroupSpeed(n, lambda, nu, d);
         }
 
+        /// <summary>
+        /// Расчет ДГС-2
+        /// </summary>
+        /// <returns>Возвращает ДГС-2</returns>
         public double GetDgs()
         {
             return 0;
         }
 
-        public double GetTaylorSeries(double betta0, double betta1, double betta2, double nu, double nu0)
+        /// <summary>
+        /// Разложение в ряд Тейлора
+        /// </summary>
+        /// <param name="nu">вводит пользователь</param>
+        /// <param name="nu0">вводит пользователь</param>
+        /// <returns>Ряд Тейлора</returns>
+        public double GetTaylorSeries(double nu, double nu0)
         {
-            var taylorSeries = CalculateTaylorSeries(betta0, betta1, betta2, nu, nu0);
+            var taylorSeries = CalculateTaylorSeries(B0, B1, B2, nu, nu0);
             return taylorSeries;
         }
 
+        /// <summary>
+        /// Сравнение разложения в ряд Тейлора и ДГС-2
+        /// </summary>
+        /// <param name="taylorSeries">Ряд Тейлора</param>
+        /// <param name="dgs">ДГС-2</param>
+        /// <returns>True, если ряд Тейлора равен ДГС-2, иначе False</returns>
         public bool IsTaylorSeriesEqualsDgs(double taylorSeries, double dgs)
         {
             return false;
         }
 
+        /// <summary>
+        /// Расчет показателя преломления по формуле Селлмейера
+        /// </summary>
+        /// <param name="lambda">Значение, введенное пользователем</param>
+        /// <returns>Возвращает значение по формуле Селлмейера</returns>
         private double CalculateRefractiveIndex(double lambda)
         {
             var lambdaPow = Math.Pow(lambda, 2);
@@ -95,28 +125,61 @@ namespace Shared.Calculate
                    B3 * lambdaPow / (lambdaPow - Math.Pow(Lambda3, 2));
         }
 
+        /// <summary>
+        /// Расчет первой производной показателя преломления по формуле
+        /// </summary>
+        /// <param name="n">Показатель преломления</param>
+        /// <param name="lambda">Длина волны</param>
+        /// <param name="nu">Частота</param>
+        /// <param name="d">Производная</param>
+        /// <returns>Первая производная</returns>
         private double CalculateFirstDerivative(double n, double lambda, double nu, double d)
         {
             return (d * n) / (d * lambda) * (CalculateSecondDerivative(lambda));
         }
 
+        /// <summary>
+        /// Расчет скорости света в вакууме
+        /// </summary>
+        /// <returns>Скорость света в вакууме</returns>
         private double CalculateC()
         {
             return 3 * Math.Pow(10, -8);
         }
 
+        /// <summary>
+        /// Расчет второй производной показателя преломления по формуле
+        /// </summary>
+        /// <param name="lambda">Длина волны</param>
+        /// <returns>Вторая производная</returns>
         private double CalculateSecondDerivative(double lambda)
         {
             return -(Math.Pow(lambda, 2) / (2 * Math.PI * CalculateC()));
         }
 
+        /// <summary>
+        /// Расчет групповой скорости по формуле
+        /// </summary>
+        /// <param name="n">Показатель преломления</param>
+        /// <param name="lambda">Длина волны</param>
+        /// <param name="nu">Частота</param>
+        /// <param name="d">Производная</param>
+        /// <returns>Групповая скорость</returns>
         private double CalculateGroupSpeed(double n, double lambda, double nu, double d)
         {
             var c = CalculateC();
             return c / (n + nu * CalculateFirstDerivative(n, lambda, nu, d));
         }
 
-
+        /// <summary>
+        /// Разложение в ряд Тейлора
+        /// </summary>
+        /// <param name="betta0">Коэффициент</param>
+        /// <param name="betta1">Коэффициент</param>
+        /// <param name="betta2">Коэффициент</param>
+        /// <param name="nu">Частота</param>
+        /// <param name="nu0">Частота</param>
+        /// <returns>Значение ряда Тейлора</returns>
         private double CalculateTaylorSeries(double betta0, double betta1, double betta2, double nu, double nu0)
         {
             return betta0 + betta1 * (nu - nu0) + 0.5 * betta2 * Math.Pow(nu - nu0, 2);
