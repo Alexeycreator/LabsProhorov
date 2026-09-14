@@ -175,7 +175,7 @@ namespace Shared.Calculate
         {
             return Math.Pow(d, 2) * n / (d * Math.Pow(omega, 2));
         }
-        
+
         private double CalculateB2(double c, double d, double n, double omega)
         {
             var d2NdOmega2 = CalculateSecondDerivative(d, n, omega);
@@ -189,13 +189,31 @@ namespace Shared.Calculate
         /// <summary>
         /// Разложение в ряд Тейлора
         /// </summary>
-        /// <param name="nu">вводит пользователь</param>
-        /// <param name="nu0">вводит пользователь</param>
+        /// <param name="omega0">Угловая частота</param>
         /// <returns>Ряд Тейлора</returns>
-        public double GetTaylorSeries(double nu, double nu0)
+        public double GetTaylorSeries(double omega0)
         {
-            var taylorSeries = CalculateTaylorSeries(B0, B1, B2, nu, nu0);
+            var omega = CalculateOmega(Lambda1);
+            var c = CalculateC();
+            var b0 = CalculateB0(GetRefractiveIndex(Lambda1), Lambda1, omega0);
+            var b1 = CalculateB1();
+            var b2 = CalculateB2(c, CalculateFirstDerivative(GetRefractiveIndex(Lambda1), Lambda1, 0),
+                GetRefractiveIndex(Lambda1), omega);
+            var taylorSeries = CalculateTaylorSeries(b0, b1, b2, omega, omega0);
             return taylorSeries;
+        }
+
+        private double CalculateB0(double n, double lambda0, double omega0)
+        {
+            var c = CalculateC();
+            return n * lambda0 * omega0 / c;
+        }
+
+        private double CalculateB1()
+        {
+            var groupSpeed = GetGroupSpeed(GetRefractiveIndex(Lambda1), Lambda1,
+                CalculateFirstDerivative(GetRefractiveIndex(Lambda1), Lambda1, 0));
+            return 1 / groupSpeed;
         }
 
         /// <summary>
@@ -204,22 +222,25 @@ namespace Shared.Calculate
         /// <param name="betta0">Коэффициент</param>
         /// <param name="betta1">Коэффициент</param>
         /// <param name="betta2">Коэффициент</param>
-        /// <param name="nu">Частота</param>
-        /// <param name="nu0">Частота</param>
+        /// <param name="omega">Угловая частота</param>
+        /// <param name="omega0">Угловая частота</param>
         /// <returns>Значение ряда Тейлора</returns>
-        private double CalculateTaylorSeries(double betta0, double betta1, double betta2, double nu, double nu0)
+        private double CalculateTaylorSeries(double betta0, double betta1, double betta2, double omega, double omega0)
         {
-            return betta0 + betta1 * (nu - nu0) + 0.5 * betta2 * Math.Pow(nu - nu0, 2);
+            return betta0 + betta1 * (omega - omega0) + 0.5 * betta2 * Math.Pow(omega - omega0, 2);
         }
 
         /// <summary>
         /// Сравнение разложения в ряд Тейлора и ДГС-2
         /// </summary>
-        /// <param name="taylorSeries">Ряд Тейлора</param>
-        /// <param name="dgs">ДГС-2</param>
         /// <returns>True, если ряд Тейлора равен ДГС-2, иначе False</returns>
-        public bool IsTaylorSeriesEqualsDgs(double taylorSeries, double dgs)
+        public bool IsTaylorSeriesEqualsDgs()
         {
+            var taylorSeries = GetTaylorSeries(CalculateOmega(Lambda1));
+            var dgs2 = GetDgs(Lambda1, Lambda1, GetRefractiveIndex(Lambda1),
+                CalculateFirstDerivative(GetRefractiveIndex(Lambda1), Lambda1, 0));
+            if (Math.Abs(taylorSeries - dgs2) < 0.0001)
+                return true;
             return false;
         }
 
