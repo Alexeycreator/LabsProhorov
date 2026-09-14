@@ -91,12 +91,11 @@ namespace Shared.Calculate
         /// </summary>
         /// <param name="n">вводит пользователь</param>
         /// <param name="lambda">вводит пользователь</param>
-        /// <param name="nu">вводит пользователь</param>
         /// <param name="d">вводит пользователь</param>
         /// <returns>Возвращает групповую скорость</returns>
-        public double GetGroupSpeed(double n, double lambda, double nu, double d)
+        public double GetGroupSpeed(double n, double lambda, double d)
         {
-            return CalculateGroupSpeed(n, lambda, nu, d);
+            return CalculateGroupSpeed(n, lambda, d);
         }
 
         /// <summary>
@@ -104,13 +103,14 @@ namespace Shared.Calculate
         /// </summary>
         /// <param name="n">Показатель преломления</param>
         /// <param name="lambda">Длина волны</param>
-        /// <param name="nu">Частота</param>
         /// <param name="d">Производная</param>
         /// <returns>Групповая скорость</returns>
-        private double CalculateGroupSpeed(double n, double lambda, double nu, double d)
+        private double CalculateGroupSpeed(double n, double lambda, double d)
         {
             var c = CalculateC();
-            return c / (n + nu * CalculateFirstDerivative(n, lambda, nu, d));
+            var omega = CalculateOmega(lambda);
+            var dNdOmega = CalculateFirstDerivative(n, lambda, d);
+            return c / (n + omega * dNdOmega);
         }
 
         /// <summary>
@@ -119,30 +119,41 @@ namespace Shared.Calculate
         /// <returns>Скорость света в вакууме</returns>
         private double CalculateC()
         {
-            return 3 * Math.Pow(10, -8);
+            return 3 * Math.Pow(10, 8);
         }
 
         /// <summary>
-        /// Расчет первой производной показателя преломления по формуле
+        /// Расчет круговой частоты (омега)
+        /// </summary>
+        /// <returns>Круговая частота</returns>
+        private double CalculateOmega(double lambda)
+        {
+            var c = CalculateC();
+            return 2 * Math.PI * c / lambda;
+        }
+
+        /// <summary>
+        /// Расчет производной показателя преломления по длине волны
         /// </summary>
         /// <param name="n">Показатель преломления</param>
         /// <param name="lambda">Длина волны</param>
-        /// <param name="nu">Частота</param>
         /// <param name="d">Производная</param>
-        /// <returns>Первая производная</returns>
-        private double CalculateFirstDerivative(double n, double lambda, double nu, double d)
+        /// <returns>Показатель преломления</returns>
+        private double CalculateFirstDerivative(double n, double lambda, double d)
         {
-            return (d * n) / (d * lambda) * (CalculateSecondDerivative(lambda));
+            var wavelengthByFrequency = CalculateSecondDerivative(lambda);
+            return (d * n) / (d * lambda) * wavelengthByFrequency;
         }
 
         /// <summary>
-        /// Расчет второй производной показателя преломления по формуле
+        /// Расчет производной длины волны по частоте
         /// </summary>
         /// <param name="lambda">Длина волны</param>
-        /// <returns>Вторая производная</returns>
+        /// <returns>Длина волны</returns>
         private double CalculateSecondDerivative(double lambda)
         {
-            return -(Math.Pow(lambda, 2) / (2 * Math.PI * CalculateC()));
+            var c = CalculateC();
+            return -(Math.Pow(lambda, 2) / (2 * Math.PI * c));
         }
 
         #endregion
