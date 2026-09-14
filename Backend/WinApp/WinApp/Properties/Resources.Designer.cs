@@ -73,6 +73,16 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap consts {
+            get {
+                object obj = ResourceManager.GetObject("consts", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Formula_a {
             get {
                 object obj = ResourceManager.GetObject("Formula_a", resourceCulture);
@@ -83,9 +93,59 @@ namespace WinApp.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap formula_b_rasp {
+            get {
+                object obj = ResourceManager.GetObject("formula_b_rasp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_b_talor {
+            get {
+                object obj = ResourceManager.GetObject("formula_b_talor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_b1_speed {
+            get {
+                object obj = ResourceManager.GetObject("formula_b1_speed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_b2_dgs2 {
+            get {
+                object obj = ResourceManager.GetObject("formula_b2_dgs2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Formula_k0 {
             get {
                 object obj = ResourceManager.GetObject("Formula_k0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_n2 {
+            get {
+                object obj = ResourceManager.GetObject("formula_n2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

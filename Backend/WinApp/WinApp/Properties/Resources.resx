@@ -118,22 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Formula_V" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Formula_V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Formula_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Formula_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lambda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lambda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Formula_pt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Formula_pt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lambda" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lambda.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="formula_b1_speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formula_b1_speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Formula_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formula_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Formula_V" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Formula_V.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formula_n2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formula_n2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Constatna_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Constatna_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Formula_k0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Formula_k0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Constatna_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Constatna_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="formula_b2_dgs2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formula_b2_dgs2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formula_b_rasp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formula_b_rasp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="formula_b_talor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\formula_b_talor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="consts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\consts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WinApp
 {
     public partial class Form1 : Form
@@ -62,12 +63,22 @@ namespace WinApp
                     throw new Exception("Введите значение длины волновода в диапазоне от 100м до 1000м (1км)");
                 if (L2_lambda < 1 || L2_lambda > 2)
                     throw new Exception("Введите значение длины волны в диапазоне от 1 мкм до 2 мкм");
-
+               
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void L3_button_calculate_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(L3_textBox_lambda.Text.Replace(".", ","), out double L3_lambda))
+                throw new Exception("Введите корректное значение у параметра лямбда");
+            if (L3_lambda < 0)
+                throw new Exception("Введите коректные значения");
+            if (L3_lambda < 0.005 || L3_lambda > 10)
+                throw new Exception("Введите значение длины волны в диапазоне от 0.05 мкм до 10 мкм");
         }
     }
 }

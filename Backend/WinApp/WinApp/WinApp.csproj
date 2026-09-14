@@ -95,5 +95,23 @@
     <EmbeddedResource Include="Resources\Formula_a.png" />
     <EmbeddedResource Include="Resources\Constatna_C.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_n2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_b_rasp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_b_talor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_b1_speed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_b2_dgs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consts.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
