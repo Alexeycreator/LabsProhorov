@@ -164,9 +164,22 @@ namespace Shared.Calculate
         /// Расчет ДГС-2
         /// </summary>
         /// <returns>Возвращает ДГС-2</returns>
-        public double GetDgs()
+        public double GetDgs(double lambda0, double lambda, double nLambda, double dNdOmega)
         {
-            return 0;
+            var c = CalculateC();
+            var b2 = CalculateB2(c, dNdOmega, nLambda, CalculateOmega(lambda));
+            return b2 * Math.Pow(10, 5);
+        }
+
+        private double CalculateSecondDerivative(double d, double n, double omega)
+        {
+            return Math.Pow(d, 2) * n / (d * Math.Pow(omega, 2));
+        }
+        
+        private double CalculateB2(double c, double d, double n, double omega)
+        {
+            var d2NdOmega2 = CalculateSecondDerivative(d, n, omega);
+            return 1 / c * (2 * (d * n / (d * omega)) + omega * d2NdOmega2);
         }
 
         #endregion
