@@ -66,7 +66,7 @@ namespace Shared.Calculate
         /// <returns>показатель преломления</returns>
         public double GetRefractiveIndex(double lambda)
         {
-            return CalculateRefractiveIndex(lambda);
+            return Math.Sqrt(CalculateRefractiveIndex(lambda));
         }
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace Shared.Calculate
         /// <returns>Возвращает групповую скорость</returns>
         public double GetGroupSpeed(double n, double lambda, double nu, double d)
         {
-            return Math.Sqrt(CalculateGroupSpeed(n, lambda, nu, d));
+            return CalculateGroupSpeed(n, lambda, nu, d);
         }
 
         /// <summary>
