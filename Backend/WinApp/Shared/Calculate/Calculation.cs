@@ -77,7 +77,7 @@ namespace Shared.Calculate
         /// <returns>Возвращает групповую скорость</returns>
         public double GetGroupSpeed(double n, double lambda, double nu, double d)
         {
-            return CalculateGroupSpeed(n, lambda, nu, d);
+            return Math.Sqrt(CalculateGroupSpeed(n, lambda, nu, d));
         }
 
         /// <summary>
