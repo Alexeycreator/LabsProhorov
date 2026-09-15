@@ -1,9 +1,15 @@
 {
   "Labs_1": {},
   "Labs_2": {
-    "WaveLength": 1.75E-06,
-    "OutputPower": 0.009907142422258498,
-    "WaveguideLength": 475.0
+    "WaveRange": [
+      1.0,
+      2.0
+    ],
+    "WaveguideLengthRange": [
+      100.0,
+      1000.0
+    ],
+    "InputPower": 10.0
   },
   "Labs_3": {},
   "Labs_4": {},
