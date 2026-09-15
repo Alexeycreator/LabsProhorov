@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Shared.Calculate;
 using Shared.Models;
 
@@ -8,10 +7,9 @@ namespace Shared.Helpers
     public sealed class Generation
     {
         private readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Files", "Labs.json");
-        private readonly JsonWriter jsonWriter = new JsonWriter();
-        private readonly Calculation calculation = new Calculation();
+        private readonly JsonWriter jsonWriter = new();
 
-        public void GenerateData(double lambda, double p0, double l, double c, double waveguideLength)
+        public void GenerateData(double p0)
         {
             EnsureFileExists();
             var root = new Root
@@ -21,9 +19,9 @@ namespace Shared.Helpers
                 },
                 Labs_2 = new LabData
                 {
-                    WaveLength = calculation.GetValueLambda(lambda),
-                    OutputPower = calculation.GetValueP_t(p0, l, lambda, c),
-                    WaveguideLength = waveguideLength
+                    WaveRange = [1, 2],
+                    WaveguideLengthRange = [100, 1000],
+                    InputPower = p0
                 },
                 Labs_3 = new LabData
                 {

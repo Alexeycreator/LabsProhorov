@@ -65,7 +65,7 @@ namespace WinApp
                     throw new Exception("Введите значение длины волны в диапазоне от 1 мкм до 2 мкм");
 
                 calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C);
-                generation.GenerateData(L2_lambda, L2_P0, L2_L, C, L2_L);
+                generation.GenerateData(L2_P0);
                 label_answer.Text = calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C)
                     .ToString(CultureInfo.CurrentCulture);
             }
