@@ -1,5 +1,4 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using Shared.Calculate;
 using Shared.Models;
 
@@ -7,12 +6,12 @@ namespace Shared.Helpers
 {
     public sealed class Generation
     {
-        private readonly string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files", "Labs.json");
-        private readonly JsonWriter jsonWriter = new JsonWriter();
-        private readonly Calculation calculation = new Calculation();
+        private readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Files", "Labs.json");
+        private readonly JsonWriter jsonWriter = new();
 
-        public void GenerateData(double lambda, double p0, double l, double c, double waveguideLength)
+        public void GenerateData(double p0)
         {
+            EnsureFileExists();
             var root = new Root
             {
                 Labs_1 = new LabData
@@ -20,9 +19,9 @@ namespace Shared.Helpers
                 },
                 Labs_2 = new LabData
                 {
-                    WaveLength = calculation.GetValueLambda(lambda),
-                    OutputPower = calculation.GetValueP_t(p0, l, lambda, c),
-                    WaveguideLength = waveguideLength
+                    WaveRange = [1, 2],
+                    WaveguideLengthRange = [100, 1000],
+                    InputPower = p0
                 },
                 Labs_3 = new LabData
                 {
@@ -39,6 +38,17 @@ namespace Shared.Helpers
             };
 
             jsonWriter.Write(filePath, root);
+        }
+
+        private void EnsureFileExists()
+        {
+            var dir = Path.GetDirectoryName(filePath);
+            if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                Directory.CreateDirectory(dir);
+
+            if (!File.Exists(filePath))
+                using (File.Create(filePath))
+                    ;
         }
     }
 }

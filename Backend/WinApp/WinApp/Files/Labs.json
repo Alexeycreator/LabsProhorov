@@ -1,0 +1,18 @@
+{
+  "Labs_1": {},
+  "Labs_2": {
+    "WaveRange": [
+      1.0,
+      2.0
+    ],
+    "WaveguideLengthRange": [
+      100.0,
+      1000.0
+    ],
+    "InputPower": 10.0
+  },
+  "Labs_3": {},
+  "Labs_4": {},
+  "Labs_5": {},
+  "Labs_6": {}
+}
