@@ -80,12 +80,46 @@ namespace WinApp
 
         private void L3_button_calculate_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(L3_textBox_lambda.Text.Replace(".", ","), out double L3_lambda))
-                throw new Exception("Введите корректное значение у параметра лямбда");
-            if (L3_lambda < 0)
-                throw new Exception("Введите коректные значения");
-            if (L3_lambda < 0.005 || L3_lambda > 10)
-                throw new Exception("Введите значение длины волны в диапазоне от 0.05 мкм до 10 мкм");
+            try
+            {
+                if (!double.TryParse(L3_textBox_lambda.Text.Replace(".", ","), out double L3_lambda))
+                    throw new Exception("Введите корректное значение у параметра лямбда");
+                if (L3_lambda < 0)
+                    throw new Exception("Введите коректные значения");
+                if (L3_lambda < 0.005 || L3_lambda > 10)
+                    throw new Exception("Введите значение длины волны в диапазоне от 0.05 мкм до 10 мкм");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void L4_button_calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!double.TryParse(L4_textBox_B2.Text.Replace(".", ","), out double L4_B2))
+                    throw new Exception("Введите корректное значение у параметра B2");
+                if (!double.TryParse(L4_textBox_L.Text.Replace(".", ","), out double L4_L))
+                    throw new Exception("Введите корректное значение у параметра L");
+                if (!int.TryParse(L4_textBox_M.Text.Replace(".", ","), out int L4_M))
+                    throw new Exception("Введите корректное значение у параметра M");
+                if (!int.TryParse(L4_textBox_N.Text.Replace(".", ","), out int L4_N))
+                    throw new Exception("Введите корректное значение у параметра N");
+                if (!double.TryParse(L4_textBox_T0.Text.Replace(".", ","), out double L4_T0))
+                    throw new Exception("Введите корректное значение у параметра T0");
+
+                if (L4_B2 < 0 || L4_L < 0 || L4_M < 0 || L4_N < 0 || L4_T0 < 0)
+                    throw new Exception("Введите коректные значения");
+                if (!calculation.IsPowerOfTwo(L4_N))
+                    throw new Exception("Введите значение N, которое является степенью числа 2");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
         }
     }
 }

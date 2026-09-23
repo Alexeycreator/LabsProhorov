@@ -247,5 +247,13 @@ namespace Shared.Calculate
         #endregion
 
         #endregion
+
+        #region CalculateLab4
+        // нужна для проверки числа на степень двойки, так как в лабораторной работе 4 нужно проверять, является ли число степенью двойки
+        public bool IsPowerOfTwo(int n)
+        {
+            return n > 0 && (n & (n - 1)) == 0;
+        }
+        #endregion
     }
 }

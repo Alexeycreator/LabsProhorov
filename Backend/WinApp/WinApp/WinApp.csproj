@@ -120,5 +120,41 @@
       <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_rasprastronrnia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_dlina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_rasprastronrnia_oper_forma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_D.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_exp_oper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_Gaus_impuls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_analitich_reshenie.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
