@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|d:\\1\u0443\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\labsprohorov\\backend\\winapp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\winapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|d:\\1\u0443\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\labsprohorov\\backend\\winapp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCD48020-4319-4252-81B2-E1AD65C1AEF0}|Shared\\Shared.csproj|D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\shared\\calculate\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeDocumentMoniker": "WinApp\\Form1.cs",
               "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeToolTip": "WinApp\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-07T17:11:12.021Z",
               "EditorCaption": ""
@@ -55,7 +55,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WinApp\\Form1.Designer.cs",
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeDocumentMoniker": "WinApp\\Form1.cs",
