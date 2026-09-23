@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Shared.Calculate;
 using Shared.Helpers;
@@ -44,8 +37,11 @@ namespace WinApp
                 if (n1 < n2)
                     throw new Exception("Параметр n1 должен быть больше n2");
 
-                calculation.GetValueV(a, lambda, n1, n2);
-                label_answer.Text = calculation.GetValueV(a, lambda, n1, n2).ToString(CultureInfo.CurrentCulture);
+                double V = calculation.GetValueV(a, lambda, n1, n2);
+                if (V < 2.4)
+                    label_answer.Text = $"Ответ: {V}. Волновод одно модовый";
+                else
+                    label_answer.Text = $"Ответ: {V}. Волновод многомодовый";
             }
             catch (Exception ex)
             {
@@ -71,12 +67,10 @@ namespace WinApp
                     throw new Exception("Введите значение длины волновода в диапазоне от 100м до 1000м (1км)");
                 if (L2_lambda < 1 || L2_lambda > 2)
                     throw new Exception("Введите значение длины волны в диапазоне от 1 мкм до 2 мкм");
-               
 
-                calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C);
+                double Pt = calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C);
                 generation.GenerateData(L2_P0);
-                label_answer.Text = calculation.GetValueP_t(L2_P0, L2_L, L2_lambda, C)
-                    .ToString(CultureInfo.CurrentCulture);
+                L2_label_answer.Text = $"Ответ: {Pt}";
             }
             catch (Exception ex)
             {

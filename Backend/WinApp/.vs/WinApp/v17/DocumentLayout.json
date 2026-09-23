@@ -46,9 +46,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeDocumentMoniker": "WinApp\\Form1.cs",
-              "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
-              "RelativeToolTip": "WinApp\\Form1.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs*",
+              "RelativeToolTip": "WinApp\\Form1.cs*",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAACkAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-07T17:11:12.021Z",
               "EditorCaption": ""
@@ -63,7 +63,8 @@
               "RelativeToolTip": "WinApp\\Form1.Designer.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAYwFkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-14T18:19:57.51Z"
+              "WhenOpened": "2026-09-14T18:19:57.51Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -95,10 +96,11 @@
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeDocumentMoniker": "WinApp\\Form1.cs",
-              "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "WinApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
+              "RelativeToolTip": "WinApp\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T12:25:43.372Z"
+              "WhenOpened": "2026-09-07T12:25:43.372Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             }
           ]
         },
