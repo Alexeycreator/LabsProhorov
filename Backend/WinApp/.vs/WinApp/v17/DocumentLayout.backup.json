@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|d:\\1\u0443\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\labsprohorov\\backend\\winapp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|d:\\1\u0443\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\labsprohorov\\backend\\winapp\\winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{43B4B1BF-1F9E-4527-99BC-83805290614D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "Shared\\Calculate\\Calculation.cs",
               "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\Shared\\Calculate\\Calculation.cs",
               "RelativeToolTip": "Shared\\Calculate\\Calculation.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAYwKwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAAAP8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T12:25:34.968Z"
             },
@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "WinApp\\Form1.cs",
               "ToolTip": "D:\\1\u0423\u0447\u0435\u0431\u0430\\7 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041F\u0440\u043E\u0445\u043E\u0440\u043E\u0432\\git_2\\LabsProhorov\\Backend\\WinApp\\WinApp\\Form1.cs",
               "RelativeToolTip": "WinApp\\Form1.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAkwF4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAQwKUAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-23T12:20:35.514Z",
               "EditorCaption": ""

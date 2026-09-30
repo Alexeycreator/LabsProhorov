@@ -156,5 +156,47 @@
   <ItemGroup>
     <None Include="Resources\formula_analitich_reshenie.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gamma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\P0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_rasprastronenia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_polarizovannoe_pove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_normic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_impuls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\L_NL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_rasprostronenia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_sistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_metod_xarakteristik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_impuls1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_impuls_posle_Z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula_ydarnaia_volna.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

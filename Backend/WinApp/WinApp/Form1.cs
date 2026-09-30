@@ -121,5 +121,60 @@ namespace WinApp
 
             }
         }
+        private void L5_button_calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!double.TryParse(L5_textBox_B2.Text.Replace(".", ","), out double L5_B2))
+                    throw new Exception("Введите корректное значение у параметра B2");
+                if (!double.TryParse(L5_textBox_L.Text.Replace(".", ","), out double L5_L))
+                    throw new Exception("Введите корректное значение у параметра L");
+                if (!int.TryParse(L5_textBox_M.Text.Replace(".", ","), out int L5_M))
+                    throw new Exception("Введите корректное значение у параметра M");
+                if (!int.TryParse(L5_textBox_N.Text.Replace(".", ","), out int L5_N))
+                    throw new Exception("Введите корректное значение у параметра N");
+                if (!double.TryParse(L5_textBox_T0.Text.Replace(".", ","), out double L5_T0))
+                    throw new Exception("Введите корректное значение у параметра T0");
+                if (!double.TryParse(L5_textBox_gamma.Text.Replace(".", ","), out double L5_gamma))
+                    throw new Exception("Введите корректное значение у параметра Гамма");
+
+                if (L5_B2 < 0 || L5_L < 0 || L5_M < 0 || L5_N < 0 || L5_T0 < 0)
+                    throw new Exception("Введите коректные значения");
+                if (!calculation.IsPowerOfTwo(L5_N))
+                    throw new Exception("Введите значение N, которое является степенью числа 2");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
+
+        private void L6_button_calculate_Click(object sender, EventArgs e)
+        {
+            try
+            {               
+                if (!double.TryParse(L6_textBox_L.Text.Replace(".", ","), out double L6_L))
+                    throw new Exception("Введите корректное значение у параметра L");
+                if (!int.TryParse(L6_textBox_M.Text.Replace(".", ","), out int L6_M))
+                    throw new Exception("Введите корректное значение у параметра M");
+                if (!int.TryParse(L6_textBox_N.Text.Replace(".", ","), out int L6_N))
+                    throw new Exception("Введите корректное значение у параметра N");
+                if (!double.TryParse(L6_textBox_L_NL.Text.Replace(".", ","), out double L6_L_NL))
+                    throw new Exception("Введите корректное значение у параметра T0");
+                if (!double.TryParse(L6_textBox_s.Text.Replace(".", ","), out double L6_s))
+                    throw new Exception("Введите корректное значение у параметра Гамма");
+
+                if (L6_L < 0 || L6_M < 0 || L6_N < 0 || L6_L_NL < 0 || L6_s < 0)
+                    throw new Exception("Введите коректные значения");
+                if (!calculation.IsPowerOfTwo(L6_N))
+                    throw new Exception("Введите значение N, которое является степенью числа 2");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+        }
     }
 }
