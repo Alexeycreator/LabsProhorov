@@ -45,6 +45,9 @@
     <ItemGroup>
         <Compile Include="Calculate\Calculation.cs" />
         <Compile Include="Helpers\Generation.cs" />
+        <Compile Include="Models\Lab4Result.cs" />
+        <Compile Include="Models\Lab5Result.cs" />
+        <Compile Include="Models\Lab6Result.cs" />
         <Compile Include="Models\LabData.cs" />
         <Compile Include="Models\Root.cs" />
         <Compile Include="Properties\AssemblyInfo.cs"/>
